@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
+import "./Profil.css";
+import Select from 'react-select';
 
 class Profil1 extends Component{
   constructor(props){
@@ -15,13 +11,20 @@ class Profil1 extends Component{
   }
 
   render(){
+    let colors = ["green", "red", "grey", "orange", "blue", "white", "yellow"];
+   
     return (
-      <div>
-        {this.props.name}
-        {this.props.lastname}
-        {this.props.date}
-        <img src={this.props.img}></img>
+      <div className='wall'>
+        <div className='profil' style={{backgroundColor: colors[1]}}>
+          <img src={this.props.img} alt="Photo de profil"></img>
+          <p>{this.props.name} {this.props.lastname}</p>
+          <p>{this.props.date}</p>
+        </div>
+        <div className='publi'>
+          <h1>Mon dernier post</h1>
+        </div>
       </div>
+      
     )
   }
   

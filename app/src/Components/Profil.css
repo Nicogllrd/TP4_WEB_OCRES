@@ -1,0 +1,19 @@
+.wall{
+
+}
+
+.profil{
+    margin-top: 6%;
+    border-style: double;
+}
+
+.publi{
+    border-style: double;
+    margin-top: 5%;
+}
+
+img{
+    width: 20%;
+    height: 20%;
+    border-radius: 100%;
+}
